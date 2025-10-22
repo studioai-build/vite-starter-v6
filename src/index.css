@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Tailwind CSS v4 custom properties */
+@theme {
+  --color-background: #fafafa;
+  --color-text: #475467;
+  --color-text-secondary: #A3A3A3;
+  --color-surface: #ffffff;
+  --color-border: #e5e5e5;
+  --color-accent: #dfd6f8da;
+  --color-primary: #7F56D9;
+  --color-secondary: #ffffff;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  
+  --font-family-sans: Inter, sans-serif;
+  
+  --border-radius: 0.5rem;
+  --border-radius-lg: 1rem;
+  --border-radius-xl: 1.5rem;
+  
+  --box-shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --box-shadow-interactive: 0 0 0 4px rgba(217, 45, 32, 0.1);
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: 0;
+}
