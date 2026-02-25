@@ -1,3 +1,26 @@
+/**
+ * ⚠️ CRITICAL CONFIGURATION – DO NOT MODIFY OR REMOVE ⚠️
+ *
+ * All existing import statements and configurations in this file are
+ * strictly required for the application to function correctly.
+ *
+ * ❌ DO NOT:
+ *  - Remove any existing lines
+ *  - Modify any existing lines
+ *  - Reorder existing lines
+ *
+ * ✅ ALLOWED:
+ *  - Add new code or configuration ONLY when absolutely necessary
+ *  - Append new logic without affecting existing behavior
+ *
+ * Any unauthorized change may cause:
+ *  - Build failures
+ *  - Runtime errors
+ *  - Module Federation breakage
+ *  - Production deployment issues
+ *
+ * If changes are required, consult the maintainers before proceeding.
+ */
 import {defineConfig, loadEnv} from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";

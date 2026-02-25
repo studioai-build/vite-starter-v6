@@ -1,3 +1,28 @@
+/* ==========================================================================
+   ⚠️ CRITICAL STYLE CONTRACT – DO NOT MODIFY STRUCTURE ⚠️
+
+   All declarations, selectors, directives, and variable names in this block
+   are REQUIRED for the design system and Tailwind pipeline to work correctly.
+
+   ❌ DO NOT:
+   - Remove any line
+   - Rename variables
+   - Change selectors or at-rules (@import, @theme, @layer, etc.)
+   - Reorder declarations
+   - Add or remove properties
+
+   ✅ ALLOWED CHANGE (STRICT):
+   - ONLY update color VALUES (e.g. hex / rgb / hsl)
+   - Variable names and non-color values MUST remain unchanged
+
+   Any structural change may cause:
+   - Tailwind build inconsistency
+   - Broken theming or design tokens
+   - Unexpected UI regressions
+
+   If changes beyond color values are required, approval is mandatory.
+   ========================================================================== */
+   
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
