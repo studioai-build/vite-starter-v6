@@ -1,4 +1,5 @@
 # 🚨 CRITICAL CONFIGURATION & STYLE FILES
+
 ## MANDATORY READING BEFORE ANY MODIFICATION
 
 > ❗ This repository contains **mission-critical configuration and styling files**.  
@@ -14,6 +15,7 @@ This document defines **non-negotiable rules** for modifying these files.
 ## 📌 SCOPE
 
 This document applies to **ALL contributors**, including:
+
 - Core maintainers
 - Feature developers
 - UI / Platform engineers
@@ -37,6 +39,7 @@ These files are foundational to:
 - Production deployment stability
 
 Small or “harmless” changes can:
+
 - Break builds only in production
 - Cause remote modules to fail loading
 - Introduce silent UI regressions
@@ -51,6 +54,7 @@ Small or “harmless” changes can:
 ## 1️⃣ Global Styles / Theme / Tailwind Core Files
 
 **Examples (non-exhaustive):**
+
 - `globals.css`
 - `theme.css`
 - Any CSS file containing:
@@ -63,6 +67,7 @@ Small or “harmless” changes can:
 ### 🚫 STRICT RULES
 
 You **MUST NOT**:
+
 - Remove any existing line
 - Rename variables
 - Change selectors
@@ -74,6 +79,7 @@ You **MUST NOT**:
 ### ✅ ONLY PERMITTED CHANGE
 
 You **MAY ONLY**:
+
 - Change **COLOR VALUES**
   - `#hex`
   - `rgb() / rgba()`
@@ -86,6 +92,7 @@ You **MAY ONLY**:
 ## 2️⃣ PostCSS Configuration
 
 **Examples:**
+
 - `postcss.config.js`
 - `postcss.config.mjs`
 
@@ -115,3 +122,33 @@ with **compatible versions**:
   "@tailwindcss/postcss": "^4.1.11",
   "tailwindcss": "^4.1.11"
 }
+
+  ⚠️ CRITICAL PACKAGE CONTRACT – DO NOT MODIFY STRUCTURE ⚠️
+
+  This package.json defines REQUIRED runtime and build-time dependencies
+  for the application, build pipeline, and Module Federation setup.
+
+  ❌ DO NOT:
+  - Remove existing dependencies or devDependencies
+  - Rename package fields (name, type, private, scripts, etc.)
+  - Move dependencies between sections
+  - Change module type or package name
+  - Downgrade or replace critical tooling
+  - Reorder or restructure the file
+
+  ✅ ALLOWED CHANGE (STRICT):
+  - ONLY add new dependencies when absolutely required
+  - Version upgrades ONLY if backward-compatible and approved
+
+  REQUIRED devDependencies that MUST always exist:
+  - postcss
+  - @tailwindcss/postcss
+  - tailwindcss
+
+  Any unauthorized change may cause:
+  - Build or install failures
+  - Broken Tailwind / PostCSS pipeline
+  - Module Federation incompatibility
+  - Runtime crashes in host applications
+
+  If changes beyond these rules are required, maintainer approval is mandatory.
