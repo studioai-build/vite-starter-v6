@@ -55,8 +55,7 @@ Small or “harmless” changes can:
 
 **Examples (non-exhaustive):**
 
-- `globals.css`
-- `theme.css`
+- `src/index.css`
 - Any CSS file containing:
   - `@import 'tailwindcss'`
   - `@theme { ... }`
