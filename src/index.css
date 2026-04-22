@@ -26,16 +26,37 @@
 @import 'tailwindcss';
 
 @theme {
+  /* Page backdrop - use for the main application/website background behind all content */
   --color-background: #fafafa;
+
+  /* Primary text - use for headings, body text, and main readable content */
   --color-text: #475467;
+
+  /* Muted text - use for captions, placeholders, timestamps, and less important information */
   --color-text-secondary: #A3A3A3;
+
+  /* Elevated content areas - use for cards, modals, dropdowns, and panels that sit above the background */
   --color-surface: #ffffff;
+
+  /* Separators - use for input borders, dividers, table lines, and element outlines */
   --color-border: #e5e5e5;
+
+  /* Highlight color - use for badges, notifications, focus states, and call-to-action elements */
   --color-accent: #dfd6f8da;
+
+  /* Main brand color - use for primary buttons, active links, and key interactive elements */
   --color-primary: #7F56D9;
+
+  /* Supporting brand color - use for secondary buttons, inactive states, and complementary elements */
   --color-secondary: #ffffff;
+
+  /* Positive feedback - use for success messages, completed states, and positive indicators */
   --color-success: #22c55e;
+
+  /* Caution alerts - use for warning messages, pending states, and attention-needed indicators */
   --color-warning: #f59e0b;
+
+  /* Error states - use for error messages, failed states, and destructive action indicators */
   --color-error: #ef4444;
   
   --font-family-sans: Inter, sans-serif;
